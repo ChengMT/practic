@@ -1,0 +1,186 @@
+/* 以下是前面有图片背景的样式 */
+.jion-head{
+    width:100%;
+    background-image:url("../../assets/img/background1.jpg");
+    background-repeat: no-repeat;
+    background-position: 0% 70% ;
+    text-align: center;
+    padding: 100px 0;
+    opacity: 0.85;
+
+}
+
+.head-Engilsh{
+    font-size:40px;
+    color: aliceblue; 
+    padding: 5px 0;
+}
+
+.head-Chinese{
+    font-size:30px;
+    color: white; 
+    padding: 5px 0 15px 0;
+}
+
+.search-table{
+border: 5px solid rgba(252, 247, 247,0.4);
+    margin: 0 auto;
+}
+   
+.search-table{
+    width: 458px;
+    position: relative;
+    text-align: left;
+}
+
+input{
+    display: inline-block;
+    width: 418px;
+    font-size: 14px;
+    padding: 5px 0 ;
+}
+
+button{
+    position: absolute;
+    right: 0;
+    display: inline-block;
+    height: 100%;
+    font-size: 14px;
+    padding: 5px 3px ;
+    background-color:rgb(41, 145, 10);
+    border: none;
+    /* 去掉边框的实线 */
+    outline: none;
+    user-select: none; 
+    /* 去掉按钮按下去时的边框效果 */
+    cursor: pointer;
+    color: aliceblue;
+}
+
+button:active {
+    background:  rgb(231, 238, 238);
+}
+/* 点击button按钮时，改变背景颜色 */
+
+.hot-search{
+    margin: 10px  auto;
+    color: white;
+    width: 467px;
+    font-size: 13px;
+    text-align: left;
+}
+
+a{
+    text-decoration: none;
+    color: white;
+    padding: 0 1px;
+}
+
+/* 以下是关于职务显示的部分 */
+.jion-body{
+    /* margin: 10px auto; */
+    font-size: 15px;
+}
+
+.location{
+    width: 850px;
+    height:25px;
+    position: relative;
+    margin: 0 auto;
+    padding: 10px 0 0 0;
+    border-bottom: 2px solid rgb(193,193,193);
+}
+
+.location p{
+    display: inline-block;
+    margin: 0;
+    cursor: pointer;
+}
+
+.city-nane{
+    width: 80px;
+    text-align: center;
+    padding-bottom: 8px;
+}
+
+.dividing-line{
+    height: 8px;
+    width: 1px;
+    background-color: rgb(193,193,193);
+    padding: 5px 0;
+    vertical-align: bottom;
+}
+
+.more-location{
+    color: green;
+    font-size: 15px;
+    position: absolute;
+    right: 0;
+    bottom: 5px;
+}
+
+.city-nane:hover{
+        border-bottom:solid 3px green;
+        font-weight:bold; 
+}
+
+.clicked{
+    border-bottom:solid 3px green;
+    font-weight:bold;
+}
+
+/* 以下是关于详细职位的无缝滚动显示 */
+.job {
+    width: 850px;
+    margin: 10px auto;
+	/* outline: 1px solid blue; */
+	height: 220px;	
+	/* 注释这行看整体效果 */ 
+	overflow: hidden; 
+}
+/* .job > div{
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+} */
+
+.job p{
+    margin:  20px 0 20px 0;
+}
+
+.wrap {
+	animation: scroll 50s infinite linear;
+}
+
+.wrap:hover {
+  animation-play-state: paused;
+}
+
+@keyframes scroll {
+	0% {
+		transform: translateY( 0 );
+	}
+	
+	100% {
+		transform: translateY(-50%);
+	}
+}
+
+p span{
+    display: inline-block;
+    width: 280px;
+}
+
+.left{
+    text-align: left;
+    cursor: pointer;
+}
+
+.center{
+    text-align: center;
+}
+
+.right{
+    text-align: right;
+}
+
